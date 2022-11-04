@@ -1,0 +1,8 @@
+Area_1: mag0, bin1
+Area_2: mag4, bin0
+Area_3: mag2, bin1
+Area_4: mag1, bin0
+Area_5: mag2, bin1
+Area_6: mag0, bin1
+Area_7: mag2, bin1
+震级:5, 震中:经度105.5, 纬度32.0
