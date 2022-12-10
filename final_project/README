@@ -1,1 +1,39 @@
-This is the final Project based on the previous project
+This is for AETA earthquake prediction project of course DSAA6000G, final project
+
+Scripts regarding model buidling are written via Python3.9.2, the one performs EDA is in R.
+
+Proper folder structure has been created for directly running scripts under the data_and_model folder.
+
+featuresEDA.R is the only R code in this project, for EDA analysis, feature filtering.
+
+toolkit.py is the same as the original one provide in baseline.
+
+config.py has been modified to include all features, not just abs_mean, from EM and GA files, and also the filtered features to keep.
+
+mergeData.py is the same as the original one provide in baseline.
+
+readData.py has been modified to generate engineered features for EM and GA separately because the feature matrix is too large.
+
+MergeFeature.py is a new script to combined EM and GA data for each area and separated as train and valid.
+
+filterData.py is a new script to combined back all features data from 8 area and train/valid data to perform EDA.
+
+lgb_magnitude.py trains the multi-class model.
+
+lgb_binary.py trains the binary model.
+
+combined.py makes the final prediction for validation set using the two models.
+
+pred.py makes prediction for both magnitude and location of test data.
+
+crosstable.py makes the cross table for multi-class and binary model results.
+
+area_feature folder contains data for training and validation.
+
+data folder contains earthquake events information and station informatino.
+
+model folder contains the two models for each area.
+
+evaluation folder contains performance matrix for the three models.
+
+test_week folder contains EM/GA data and prediction from a 7-day window.
