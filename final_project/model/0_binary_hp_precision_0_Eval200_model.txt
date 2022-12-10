@@ -1,0 +1,151 @@
+tree
+version=v3
+num_class=1
+num_tree_per_iteration=1
+label_index=0
+max_feature_idx=42
+objective=binary sigmoid:1
+average_output
+feature_names=kurt_day_mean_min_magn abs_mean_lastday_mean_magn abs_mean_lastday_min_magn energy_sstd_lastday_mean_magn energy_sstd_lastday_max_min_magn frequency_center_min_magn frequency_center_lastday_min_magn mean_square_frequency_min_magn mean_square_frequency_lastday_mean_magn mean_square_frequency_lastday_min_magn mean_square_frequency_lastday_max_min_magn frequency_entropy_max_min_magn frequency_entropy_lastday_mean_magn frequency_entropy_lastday_max_min_magn level4d_energy_lastday_mean_magn level5d_energy_lastday_max_min_magn ulf_power_lastday_max_min_magn ulf_kurt_lastday_min_magn ulf_kurt_lastday_max_min_magn ulf_energy_smax_lastday_mean_magn ulf_energy_smax_lastday_max_min_magn diff_1_lastday_max_min_magn skew_lastday_max_sound skew_lastday_min_sound kurt_max_min_sound kurt_lastday_max_min_sound abs_max_max_min_sound abs_mean_lastday_min_sound s_zero_rate_max_lastday_mean_sound power_10_15_day_mean_min_sound power_35_40_lastday_mean_sound mean_square_frequency_lastday_mean_sound mean_square_frequency_lastday_min_sound mean_square_frequency_lastday_max_min_sound frequency_entropy_lastday_mean_sound frequency_entropy_lastday_max_min_sound level6a_energy_day_mean_min_sound mean_lastday_max_min_sound PC1 PC2 PC3 PC4 PC5
+feature_infos=[-1.5637344550633701:-1.1352273789426399] [-2.7133654138246199:2.26235587176566] [-2.8374182171579498:-0.52317574715795101] [9.1349300000000003e-05:1.02076482788159] [0:11.482764566666701] [30.294533333333298:59.006219999999999] [41.132100000000001:60.683999999999997] [1.3666700000000001:50.090670000000003] [50.031799999999997:58.567993680004399] [18.3237666666667:50.128349999999998] [0:91.915329999999997] [2.0875374999999998:4.6560350000000001] [6.0842482758487701:7.0186252228009298] [0:4.4473083333333303] [0.22205:746.00843807291699] [0:7552.8644324999996] [0:15498.45368766] [-1.9318930000000001:1.3648800000000001] [0:1937.064392] [1.6214200000000001e-05:0.53955563694222897] [0:8.8143540488099994] [0:16.6433936666667] [-0.0025505200000000001:1.231147725] [-39.548000000000002:-0.0025505200000000001] [0.33188139999999999:6620.81493054167] [0:4733.2982464999995] [0.00059158933333339995:14.26619584] [-0.0082543043573636999:-0.0049233576906970999] [0:49.716027874564503] [3.3204539409722199e-09:8.8597345457175997e-07] [1.1330535949074101e-09:4.2724035880217498e-05] [42.023901001197601:55.0792788117284] [0.033990800000000002:50.926699999999997] [0:154.61886000000001] [9.0228326347305394:9.2702399999999994] [0:3.7864433333333301] [0.000165622517361:0.0430675205439814] [0:0.67209099999999999] [-7.2103679253308997:-0.37567078196277298] [-3.0314785424058099:0.59083602540497104] [0.68757845181444099:4.9533879476013301] [-0.98083415143410502:1.86295141447986] [-1.99250571523283:0.948807076373273]
+tree_sizes=309
+
+Tree=0
+num_leaves=2
+num_cat=0
+split_feature=2
+split_gain=140.649
+threshold=-2.8273207238246196
+decision_type=2
+left_child=-1
+right_child=-2
+leaf_value=-1.5093283582089554 1.9925187032418954
+leaf_weight=26.75 20
+leaf_count=107 80
+internal_value=0
+internal_weight=0
+internal_count=187
+is_linear=0
+shrinkage=1
+
+
+end of trees
+
+feature_importances:
+abs_mean_lastday_min_magn=1
+
+parameters:
+[boosting: rf]
+[objective: binary]
+[metric: binary_logloss]
+[tree_learner: serial]
+[device_type: cpu]
+[data: ]
+[valid: ]
+[num_iterations: 481]
+[learning_rate: 0.427682]
+[num_leaves: 2]
+[num_threads: 6]
+[deterministic: 0]
+[force_col_wise: 0]
+[force_row_wise: 0]
+[histogram_pool_size: -1]
+[max_depth: -1]
+[min_data_in_leaf: 16]
+[min_sum_hessian_in_leaf: 0.001]
+[bagging_fraction: 0.761138]
+[pos_bagging_fraction: 1]
+[neg_bagging_fraction: 1]
+[bagging_freq: 3]
+[bagging_seed: 3]
+[feature_fraction: 0.844945]
+[feature_fraction_bynode: 1]
+[feature_fraction_seed: 2]
+[extra_trees: 0]
+[extra_seed: 6]
+[early_stopping_round: 10]
+[first_metric_only: 0]
+[max_delta_step: 0]
+[lambda_l1: 0.05]
+[lambda_l2: 0.05]
+[linear_lambda: 0]
+[min_gain_to_split: 0]
+[drop_rate: 0.1]
+[max_drop: 50]
+[skip_drop: 0.5]
+[xgboost_dart_mode: 0]
+[uniform_drop: 0]
+[drop_seed: 4]
+[top_rate: 0.2]
+[other_rate: 0.1]
+[min_data_per_group: 100]
+[max_cat_threshold: 32]
+[cat_l2: 10]
+[cat_smooth: 10]
+[max_cat_to_onehot: 4]
+[top_k: 20]
+[monotone_constraints: ]
+[monotone_constraints_method: basic]
+[monotone_penalty: 0]
+[feature_contri: ]
+[forcedsplits_filename: ]
+[refit_decay_rate: 0.9]
+[cegb_tradeoff: 1]
+[cegb_penalty_split: 0]
+[cegb_penalty_feature_lazy: ]
+[cegb_penalty_feature_coupled: ]
+[path_smooth: 0]
+[interaction_constraints: ]
+[verbosity: -1]
+[saved_feature_importance_type: 0]
+[linear_tree: 0]
+[max_bin: 200]
+[max_bin_by_feature: ]
+[min_data_in_bin: 3]
+[bin_construct_sample_cnt: 200000]
+[data_random_seed: 1]
+[is_enable_sparse: 1]
+[enable_bundle: 1]
+[use_missing: 1]
+[zero_as_missing: 0]
+[feature_pre_filter: 0]
+[pre_partition: 0]
+[two_round: 0]
+[header: 0]
+[label_column: ]
+[weight_column: ]
+[group_column: ]
+[ignore_column: ]
+[categorical_feature: ]
+[forcedbins_filename: ]
+[precise_float_parser: 0]
+[objective_seed: 5]
+[num_class: 1]
+[is_unbalance: 0]
+[scale_pos_weight: 1]
+[sigmoid: 1]
+[boost_from_average: 1]
+[reg_sqrt: 0]
+[alpha: 0.9]
+[fair_c: 1]
+[poisson_max_delta_step: 0.7]
+[tweedie_variance_power: 1.5]
+[lambdarank_truncation_level: 30]
+[lambdarank_norm: 1]
+[label_gain: ]
+[eval_at: ]
+[multi_error_top_k: 1]
+[auc_mu_weights: ]
+[num_machines: 1]
+[local_listen_port: 12400]
+[time_out: 120]
+[machine_list_filename: ]
+[machines: ]
+[gpu_platform_id: -1]
+[gpu_device_id: -1]
+[gpu_use_dp: 0]
+[num_gpu: 1]
+
+end of parameters
+
+pandas_categorical:[]

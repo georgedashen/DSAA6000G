@@ -1,0 +1,215 @@
+tree
+version=v3
+num_class=1
+num_tree_per_iteration=1
+label_index=0
+max_feature_idx=42
+objective=binary sigmoid:1
+average_output
+feature_names=kurt_day_mean_min_magn abs_mean_lastday_mean_magn abs_mean_lastday_min_magn energy_sstd_lastday_mean_magn energy_sstd_lastday_max_min_magn frequency_center_min_magn frequency_center_lastday_min_magn mean_square_frequency_min_magn mean_square_frequency_lastday_mean_magn mean_square_frequency_lastday_min_magn mean_square_frequency_lastday_max_min_magn frequency_entropy_max_min_magn frequency_entropy_lastday_mean_magn frequency_entropy_lastday_max_min_magn level4d_energy_lastday_mean_magn level5d_energy_lastday_max_min_magn ulf_power_lastday_max_min_magn ulf_kurt_lastday_min_magn ulf_kurt_lastday_max_min_magn ulf_energy_smax_lastday_mean_magn ulf_energy_smax_lastday_max_min_magn diff_1_lastday_max_min_magn skew_lastday_max_sound skew_lastday_min_sound kurt_max_min_sound kurt_lastday_max_min_sound abs_max_max_min_sound abs_mean_lastday_min_sound s_zero_rate_max_lastday_mean_sound power_10_15_day_mean_min_sound power_35_40_lastday_mean_sound mean_square_frequency_lastday_mean_sound mean_square_frequency_lastday_min_sound mean_square_frequency_lastday_max_min_sound frequency_entropy_lastday_mean_sound frequency_entropy_lastday_max_min_sound level6a_energy_day_mean_min_sound mean_lastday_max_min_sound PC1 PC2 PC3 PC4 PC5
+feature_infos=[-1.5020827404580199:-0.91083109353454395] [-0.73627858800690404:1.95635549803415] [-1.5455721895908501:-1.29217534259085] [0.027436373333333298:0.89284003960026004] [0.31499015000000002:13.6656928885767] [35.308399999999999:56.845700000000001] [36.836950000000002:60.304066666666699] [4.46591:50.030900000000003] [50.5998442947702:76.010444809993899] [6.6329624999999997:50.169133333333299] [61.824599999999997:154.66323777777799] [3.0454500000000002:6.45994714285714] [6.2529451087997101:7.0440417746376802] [2.3774266666666701:6.0239500000000001] [15.3497359953704:1716.79133821081] [216.103734:64250.364858779998] [0.0001944359:254646.32555891] [-1.956707:-1.0309524999999999] [301.08846999999997:2514.6561299999998] [6.8257009148379395e-05:2.0002367896761299] [0.0053555153146666:20.387599133646699] [1.833831:17.64305461] [0.049105835:16.108609000000001] [-21.779:-0.19035975359999999] [52.659269999999999:18304.469789999999] [14.356999999999999:2162.5088166666701] [0.34974300000000003:4.9677884433333297] [-0.104021787239747:-0.096910035239746894] [26.9968652037618:229.89293623043599] [3.0081600000000001e-09:0.0001670954424578] [1.5864630067790001e-07:0.00033718229534560003] [34.261974130036599:76.122669907407399] [0.033990800000000002:40.572200000000002] [33.065800000000003:150.11034253333301] [7.5283572605311404:9.0344703366416308] [0.94408999999999899:4.9279590000000004] [0.0001112448076388:41.837445166316797] [0.0221339999999998:2.1665661666666698] [-2.0454357908212599:3.3945228880389902] [-1.9354706630426599:3.5813453943961302] [-2.8984130200004201:2.5981159976141299] [-2.7420420030473398:1.1929172069952401] [-1.72418617632047:1.7649361541941599]
+tree_sizes=531 515 610 610
+
+Tree=0
+num_leaves=4
+num_cat=0
+split_feature=28 7 32
+split_gain=41.4064 25.132 6.90564
+threshold=92.730148033132153 33.044646666666658 8.5400525000000016
+decision_type=2 2 2
+left_child=1 -1 -3
+right_child=-2 2 -4
+leaf_value=0.76020408163265274 1.8097345132743361 -1.8693181818181817 -0.50735294117647067
+leaf_weight=9.7500000000000018 11.249999999999998 8.7499999999999982 6.7499999999999991
+leaf_count=39 45 35 27
+internal_value=0 -0.492095 -1.28296
+internal_weight=0 25.25 15.5
+internal_count=146 101 62
+is_linear=0
+shrinkage=1
+
+
+Tree=1
+num_leaves=4
+num_cat=0
+split_feature=28 7 5
+split_gain=41.4064 25.132 4.57798
+threshold=92.730148033132153 33.044646666666658 53.225633333333356
+decision_type=2 2 2
+left_child=1 -1 -3
+right_child=-2 2 -4
+leaf_value=0.76020408163265274 1.8097345132743361 -0.73913043478260887 -1.8476821192052977
+leaf_weight=9.7500000000000018 11.249999999999998 7.9999999999999982 7.5
+leaf_count=39 45 32 30
+internal_value=0 -0.492095 -1.28296
+internal_weight=0 25.25 15.5
+internal_count=146 101 62
+is_linear=0
+shrinkage=1
+
+
+Tree=2
+num_leaves=5
+num_cat=0
+split_feature=2 23 15 1
+split_gain=44.6064 38.9808 4.11983 2.77774
+threshold=-1.5371413175908499 -4.2522608033333347 6415.3850840797659 -0.080317801262764374
+decision_type=2 2 2 2
+left_child=3 2 -2 -1
+right_child=1 -3 -4 -5
+leaf_value=1.0610687022900762 -1.9834254143646406 1.3664122137404573 -0.90839694656488557 1.9813664596273293
+leaf_weight=6.5 8.9999999999999982 6.5000000000000027 6.4999999999999991 7.9999999999999982
+leaf_count=26 36 26 26 32
+internal_value=0 -0.678005 -1.54019 1.57732
+internal_weight=0 22 15.5 14.5
+internal_count=146 88 62 58
+is_linear=0
+shrinkage=1
+
+
+Tree=3
+num_leaves=5
+num_cat=0
+split_feature=2 23 15 1
+split_gain=44.6064 38.9808 4.11983 2.77774
+threshold=-1.5371413175908499 -4.2522608033333347 6415.3850840797659 -0.080317801262764374
+decision_type=2 2 2 2
+left_child=3 2 -2 -1
+right_child=1 -3 -4 -5
+leaf_value=1.0610687022900762 -1.9834254143646406 1.3664122137404573 -0.90839694656488557 1.9813664596273293
+leaf_weight=6.5 8.9999999999999982 6.5000000000000027 6.4999999999999991 7.9999999999999982
+leaf_count=26 36 26 26 32
+internal_value=0 -0.678005 -1.54019 1.57732
+internal_weight=0 22 15.5 14.5
+internal_count=146 88 62 58
+is_linear=0
+shrinkage=1
+
+
+end of trees
+
+feature_importances:
+abs_mean_lastday_mean_magn=2
+abs_mean_lastday_min_magn=2
+mean_square_frequency_min_magn=2
+level5d_energy_lastday_max_min_magn=2
+skew_lastday_min_sound=2
+s_zero_rate_max_lastday_mean_sound=2
+frequency_center_min_magn=1
+mean_square_frequency_lastday_min_sound=1
+
+parameters:
+[boosting: rf]
+[objective: binary]
+[metric: binary_logloss]
+[tree_learner: serial]
+[device_type: cpu]
+[data: ]
+[valid: ]
+[num_iterations: 279]
+[learning_rate: 0.0335624]
+[num_leaves: 33]
+[num_threads: 6]
+[deterministic: 0]
+[force_col_wise: 0]
+[force_row_wise: 0]
+[histogram_pool_size: -1]
+[max_depth: -1]
+[min_data_in_leaf: 26]
+[min_sum_hessian_in_leaf: 0.001]
+[bagging_fraction: 0.522127]
+[pos_bagging_fraction: 1]
+[neg_bagging_fraction: 1]
+[bagging_freq: 7]
+[bagging_seed: 3]
+[feature_fraction: 0.564805]
+[feature_fraction_bynode: 1]
+[feature_fraction_seed: 2]
+[extra_trees: 0]
+[extra_seed: 6]
+[early_stopping_round: 10]
+[first_metric_only: 0]
+[max_delta_step: 0]
+[lambda_l1: 0.05]
+[lambda_l2: 0.05]
+[linear_lambda: 0]
+[min_gain_to_split: 0]
+[drop_rate: 0.1]
+[max_drop: 50]
+[skip_drop: 0.5]
+[xgboost_dart_mode: 0]
+[uniform_drop: 0]
+[drop_seed: 4]
+[top_rate: 0.2]
+[other_rate: 0.1]
+[min_data_per_group: 100]
+[max_cat_threshold: 32]
+[cat_l2: 10]
+[cat_smooth: 10]
+[max_cat_to_onehot: 4]
+[top_k: 20]
+[monotone_constraints: ]
+[monotone_constraints_method: basic]
+[monotone_penalty: 0]
+[feature_contri: ]
+[forcedsplits_filename: ]
+[refit_decay_rate: 0.9]
+[cegb_tradeoff: 1]
+[cegb_penalty_split: 0]
+[cegb_penalty_feature_lazy: ]
+[cegb_penalty_feature_coupled: ]
+[path_smooth: 0]
+[interaction_constraints: ]
+[verbosity: -1]
+[saved_feature_importance_type: 0]
+[linear_tree: 0]
+[max_bin: 200]
+[max_bin_by_feature: ]
+[min_data_in_bin: 3]
+[bin_construct_sample_cnt: 200000]
+[data_random_seed: 1]
+[is_enable_sparse: 1]
+[enable_bundle: 1]
+[use_missing: 1]
+[zero_as_missing: 0]
+[feature_pre_filter: 0]
+[pre_partition: 0]
+[two_round: 0]
+[header: 0]
+[label_column: ]
+[weight_column: ]
+[group_column: ]
+[ignore_column: ]
+[categorical_feature: ]
+[forcedbins_filename: ]
+[precise_float_parser: 0]
+[objective_seed: 5]
+[num_class: 1]
+[is_unbalance: 0]
+[scale_pos_weight: 1]
+[sigmoid: 1]
+[boost_from_average: 1]
+[reg_sqrt: 0]
+[alpha: 0.9]
+[fair_c: 1]
+[poisson_max_delta_step: 0.7]
+[tweedie_variance_power: 1.5]
+[lambdarank_truncation_level: 30]
+[lambdarank_norm: 1]
+[label_gain: ]
+[eval_at: ]
+[multi_error_top_k: 1]
+[auc_mu_weights: ]
+[num_machines: 1]
+[local_listen_port: 12400]
+[time_out: 120]
+[machine_list_filename: ]
+[machines: ]
+[gpu_platform_id: -1]
+[gpu_device_id: -1]
+[gpu_use_dp: 0]
+[num_gpu: 1]
+
+end of parameters
+
+pandas_categorical:[]
